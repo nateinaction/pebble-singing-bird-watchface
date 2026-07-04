@@ -1,5 +1,4 @@
 #include <pebble.h>
-#include "../../build/include/message_keys.auto.h"
 
 // ---------------------------------------------------------------------------
 // Texas Songbird — a magnified analog dial on black where each of the 12 hour
