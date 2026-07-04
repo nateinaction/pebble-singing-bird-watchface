@@ -1,0 +1,69 @@
+{
+  "name": "texas-songbird",
+  "author": "Nate Gay",
+  "version": "1.0.0",
+  "keywords": [
+    "pebble-watchface"
+  ],
+  "private": true,
+  "dependencies": {
+    "@rebble/clay": "^1.0.10"
+  },
+  "scripts": {
+    "install-emulator": "pebble build && pebble install --emulator emery && pebble logs",
+    "screenshot": "pebble build && pebble install --emulator emery && pebble screenshot store/screenshots/screenshot_emery.png --emulator emery --no-open"
+  },
+  "pebble": {
+    "displayName": "Texas Songbird",
+    "uuid": "ebe77f99-203d-447a-9abc-306bbbf29457",
+    "sdkVersion": "3",
+    "enableMultiJS": true,
+    "targetPlatforms": [
+      "emery"
+    ],
+    "watchapp": {
+      "watchface": true
+    },
+    "capabilities": [
+      "configurable"
+    ],
+    "messageKeys": [
+      "HAND_HEX",
+      "MUTE"
+    ],
+    "resources": {
+      "media": [
+        {
+          "menuIcon": true,
+          "type": "png",
+          "name": "APP_ICON",
+          "file": "images/app_icon.png"
+        },
+        { "type": "bitmap", "name": "BIRD_00", "file": "images/birds/bird_00.png" },
+        { "type": "bitmap", "name": "BIRD_01", "file": "images/birds/bird_01.png" },
+        { "type": "bitmap", "name": "BIRD_02", "file": "images/birds/bird_02.png" },
+        { "type": "bitmap", "name": "BIRD_03", "file": "images/birds/bird_03.png" },
+        { "type": "bitmap", "name": "BIRD_04", "file": "images/birds/bird_04.png" },
+        { "type": "bitmap", "name": "BIRD_05", "file": "images/birds/bird_05.png" },
+        { "type": "bitmap", "name": "BIRD_06", "file": "images/birds/bird_06.png" },
+        { "type": "bitmap", "name": "BIRD_07", "file": "images/birds/bird_07.png" },
+        { "type": "bitmap", "name": "BIRD_08", "file": "images/birds/bird_08.png" },
+        { "type": "bitmap", "name": "BIRD_09", "file": "images/birds/bird_09.png" },
+        { "type": "bitmap", "name": "BIRD_10", "file": "images/birds/bird_10.png" },
+        { "type": "bitmap", "name": "BIRD_11", "file": "images/birds/bird_11.png" },
+        { "type": "raw", "name": "CALL_00", "file": "audio/call_00.pcm" },
+        { "type": "raw", "name": "CALL_01", "file": "audio/call_01.pcm" },
+        { "type": "raw", "name": "CALL_02", "file": "audio/call_02.pcm" },
+        { "type": "raw", "name": "CALL_03", "file": "audio/call_03.pcm" },
+        { "type": "raw", "name": "CALL_04", "file": "audio/call_04.pcm" },
+        { "type": "raw", "name": "CALL_05", "file": "audio/call_05.pcm" },
+        { "type": "raw", "name": "CALL_06", "file": "audio/call_06.pcm" },
+        { "type": "raw", "name": "CALL_07", "file": "audio/call_07.pcm" },
+        { "type": "raw", "name": "CALL_08", "file": "audio/call_08.pcm" },
+        { "type": "raw", "name": "CALL_09", "file": "audio/call_09.pcm" },
+        { "type": "raw", "name": "CALL_10", "file": "audio/call_10.pcm" },
+        { "type": "raw", "name": "CALL_11", "file": "audio/call_11.pcm" }
+      ]
+    }
+  }
+}
